@@ -1,8 +1,8 @@
-from src.lib.autobadger import Callback
-from src.lib.enums import Project, Registry
-from src.lib.registry import register, graded
-from src.lib.runnable import TestRunnable
-from src.lib.types import TestError
+from ..lib.autobadger import Callback
+from ..lib.enums import Project, Registry
+from ..lib.registry import register, graded
+from ..lib.runnable import TestRunnable
+from ..lib.types import TestError
 
 
 @register(project=Project.P1, registry=Registry.TEST, points=20)

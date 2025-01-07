@@ -6,7 +6,7 @@ from typing import Callable
 
 from pydantic import BaseModel, Field
 
-from src.lib.enums import Project, TestStatus
+from .enums import Project, TestStatus
 
 
 class Score(BaseModel):

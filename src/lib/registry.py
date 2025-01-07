@@ -1,11 +1,11 @@
 import warnings
 from typing import Callable
 
-from src.lib.autobadger import Callback
-from src.lib.enums import Project, Registry, TestStatus
-from src.lib.exceptions import TestFailedToExecute
-from src.lib.runnable import RegisteredTestClass
-from src.lib.types import TestResult, Score, RegisteredCallback, TestError
+from .autobadger import Callback
+from .enums import Project, Registry, TestStatus
+from .exceptions import TestFailedToExecute
+from .runnable import RegisteredTestClass
+from .types import TestResult, Score, RegisteredCallback, TestError
 
 _test_registry: list[RegisteredTestClass] = []
 _callback_registry: list[RegisteredCallback] = []

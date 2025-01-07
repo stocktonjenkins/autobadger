@@ -5,11 +5,11 @@ from typing import TypeVar
 from typing_extensions import Generic
 from typing import TYPE_CHECKING
 
-from src.lib.exceptions import MisconfiguredTestClass, TestFailedToExecute
+from .exceptions import MisconfiguredTestClass, TestFailedToExecute
 
 if TYPE_CHECKING:
-    from src.lib.autobadger import AutobadgerCallback
-from src.lib.types import AutobadgerResult, TestResult
+    from .autobadger import AutobadgerCallback
+from .types import AutobadgerResult, TestResult
 
 T = TypeVar("T")
 

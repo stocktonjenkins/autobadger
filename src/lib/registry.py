@@ -1,11 +1,11 @@
 import warnings
 from typing import Callable
 
-from lib.autobadger import Callback
-from lib.enums import Project, Registry, TestStatus
-from lib.exceptions import TestFailedToExecute
-from lib.runnable import RegisteredTestClass
-from lib.types import TestResult, Score, RegisteredCallback, TestError
+from src.lib.autobadger import Callback
+from src.lib.enums import Project, Registry, TestStatus
+from src.lib.exceptions import TestFailedToExecute
+from src.lib.runnable import RegisteredTestClass
+from src.lib.types import TestResult, Score, RegisteredCallback, TestError
 
 _test_registry: list[RegisteredTestClass] = []
 _callback_registry: list[RegisteredCallback] = []
@@ -68,7 +68,7 @@ def get_registry(
     import importlib
 
     # TODO: validate this method would work when used as a PIP package
-    importlib.import_module("projects")
+    importlib.import_module("src.projects")
     if registry == Registry.TEST:
         tests = list(filter(lambda cls: cls.__project__ == project, _test_registry))
         assert len(tests) > 0, f"No tests found for {project.value}!"

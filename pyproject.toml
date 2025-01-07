@@ -17,4 +17,4 @@ dependencies = [
 ]  # Add your package dependencies here
 requires-python = ">=3.10"
 [project.scripts]
-autobadger = "autobadger.scripts.main:main"
+autobadger = "autobadger.src.scripts.main:main"

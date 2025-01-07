@@ -1,10 +1,10 @@
 import abc
 import traceback
 
-from lib.enums import Project
-from lib.exceptions import MissingRequiredResource, MisconfiguredTestClass
-from lib.runnable import Runnable, RegisteredTestClass
-from lib.types import AutobadgerResult
+from src.lib.enums import Project
+from src.lib.exceptions import MissingRequiredResource, MisconfiguredTestClass
+from src.lib.runnable import Runnable, RegisteredTestClass
+from src.lib.types import AutobadgerResult
 
 
 class Callback(abc.ABC):

@@ -1,9 +1,9 @@
 import json
 from argparse import ArgumentParser
 
-from ..lib.autobadger import Autobadger, Callback, AutobadgerCallback
-from ..lib.enums import Project, Registry
-from ..lib.registry import get_registry, RegisteredTestClass
+from lib.autobadger import Autobadger, Callback, AutobadgerCallback
+from lib.enums import Project, Registry
+from lib.registry import get_registry, RegisteredTestClass
 
 
 def _parse_args_():

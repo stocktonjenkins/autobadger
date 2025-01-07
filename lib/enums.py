@@ -3,7 +3,7 @@ import enum
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from src.lib.types import Score
+    from lib.types import Score
 
 
 class TestStatus(enum.Enum):

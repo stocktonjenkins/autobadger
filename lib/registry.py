@@ -68,7 +68,7 @@ def get_registry(
     import importlib
 
     # TODO: validate this method would work when used as a PIP package
-    importlib.import_module("src.projects")
+    importlib.import_module("projects")
     if registry == Registry.TEST:
         tests = list(filter(lambda cls: cls.__project__ == project, _test_registry))
         assert len(tests) > 0, f"No tests found for {project.value}!"

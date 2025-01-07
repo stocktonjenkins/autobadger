@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "autobadger"
-version = "0.1.0"
+version = "0.1.3"
 description = "CLI tool for autograding CS 544 projects at UW-Madison"
 authors = [
     { name = "Stockton Jenkins", email = "jsjenkins4@wisc.edu" }

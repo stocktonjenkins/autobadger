@@ -5,8 +5,5 @@ repos:
     - id: extract-version
       name: Extract CLI version
       entry: python scripts/extract_version.py
-      language: python
-      types: [python]
+      language: system
       files: ^pyproject.toml$
-      additional_dependencies:
-        - toml

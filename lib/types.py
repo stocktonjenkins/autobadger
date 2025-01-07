@@ -93,6 +93,7 @@ class AutobadgerResult(BaseModel):
             [test.to_dict() for test in self.tests],
         )
         return {
+            "created": self.created.isoformat(),
             "project": self.project.value,
             "score": self.score.to_dict() if self.score else "MISSING",
             "tests": {key: out[key] for key in sorted(out)},

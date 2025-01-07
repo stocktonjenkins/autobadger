@@ -32,6 +32,11 @@ class Project(enum.Enum):
     P8 = "p8"
 
 
+class StdOut(enum.Enum):
+    PRINT = "print"
+    JSON = "json"
+
+
 class Registry(enum.Enum):
     TEST = "test"
     CALLBACK = "callback"

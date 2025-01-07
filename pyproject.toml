@@ -18,8 +18,8 @@ dependencies = [
 requires-python = ">=3.10"
 
 [tool.setuptools]
-packages = ["scripts", "lib", "projects"]
-package-dir = {"" = "src"}
+#packages = ["scripts", "lib", "projects"]
+#package-dir = {"" = "src"}
 
 [project.scripts]
-autobadger = "autobadger.src.scripts.main:main"
+autobadger = "scripts.main:main"

@@ -21,7 +21,6 @@ requires-python = ">=3.10"
 
 [tool.setuptools]
 packages = ["scripts", "lib", "projects"]
-include_package_data = true
 
 [project.scripts]
 autobadger = "scripts.main:main"

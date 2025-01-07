@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autobadger"
+version = "0.1.0"
+description = "CLI tool for autograding CS 544 projects at UW-Madison"
+authors = [
+    { name = "Stockton Jenkins", email = "jsjenkins4@wisc.edu" }
+]
+dependencies = [
+    "annotated-types",
+    "pydantic",
+    "pydantic-core",
+    "typing-extensions"
+]  # Add your package dependencies here
+requires-python = ">=3.10"
+[project.scripts]
+autobadger = "autobadger.scripts.main:main"

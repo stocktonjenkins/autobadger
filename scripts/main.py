@@ -4,6 +4,7 @@ from argparse import ArgumentParser
 from lib.autobadger import Autobadger, Callback, AutobadgerCallback
 from lib.enums import Project, Registry, StdOut
 from lib.registry import get_registry, RegisteredTestClass
+import scripts
 
 
 def _parse_args_():
@@ -15,9 +16,7 @@ def _parse_args_():
 
 
 def print_cli_info_and_usage():
-    with open("scripts/version.json", "r") as f:
-        version_dict = json.load(f)
-    version = version_dict["version"]
+    version = scripts.__version__
     print("Welcome to Autobadger!")
     print(f"Current Version: {version}")
     print(

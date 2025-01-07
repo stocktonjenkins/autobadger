@@ -7,5 +7,6 @@ repos:
       entry: python scripts/extract_version.py
       language: python
       types: [python]
+      files: ^pyproject.toml$
       additional_dependencies:
         - toml

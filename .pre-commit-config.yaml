@@ -7,3 +7,9 @@ repos:
       entry: python scripts/extract_version.py
       language: system
       files: ^pyproject.toml$
+- repo: https://github.com/charliermarsh/ruff-pre-commit
+  rev: 'v0.2.0'
+  hooks:
+#    - id: ruff
+#      args: [ --fix, --exit-non-zero-on-fix ]
+    - id: ruff-format

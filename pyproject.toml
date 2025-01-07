@@ -14,7 +14,7 @@ dependencies = [
     "pydantic",
     "pydantic-core",
     "typing-extensions"
-]  # Add your package dependencies here
+]
 requires-python = ">=3.10"
 
 [tool.setuptools]
@@ -22,4 +22,4 @@ packages = ["scripts", "lib", "projects"]
 package-dir = {"" = "src"}
 
 [project.scripts]
-autobadger = "src.scripts.main:main"
+autobadger = "autobadger.src.scripts.main:main"

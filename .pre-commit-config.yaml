@@ -3,7 +3,9 @@ repos:
 - repo: local
   hooks:
     - id: extract-version
-    - name: Extract CLI version
-    - entry: python extract_version.py
-    - language: python
-    - types: [python]
+      name: Extract CLI version
+      entry: python scripts/extract_version.py
+      language: python
+      types: [python]
+      additional_dependencies:
+        - toml

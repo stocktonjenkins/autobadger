@@ -41,6 +41,7 @@ def main():
     autobadger = Autobadger(project, tests, callback=AutobadgerCallback(callbacks))
     result = autobadger()
     # TODO: given config from arguments, use results to...
+
     #       1. Output to score.json?
     #       2. Save in a remote place?
     #       3. Other?

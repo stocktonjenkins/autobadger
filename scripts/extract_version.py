@@ -1,6 +1,4 @@
-# extract_version.py
 import json
-
 import toml
 
 

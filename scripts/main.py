@@ -21,7 +21,9 @@ def print_cli_info_and_usage():
     version = pyproject["project"]["version"]
     print("Welcome to Autobadger!")
     print(f"Current Version: {version}")
-    print("Usage: autobadger [--project PROJECT (p1-p8)] [--stdout STDOUT (print|json)]")
+    print(
+        "Usage: autobadger [--project PROJECT (p1-p8)] [--stdout STDOUT (print|json)]"
+    )
 
 
 def main():
@@ -30,7 +32,7 @@ def main():
     info = args.info
     stdout = args.stdout
     if not info and not project:
-        raise ValueError("Project not specified. Pass --project=\"...\" to CLI.")
+        raise ValueError('Project not specified. Pass --project="..." to CLI.')
     if info:
         print_cli_info_and_usage()
         return

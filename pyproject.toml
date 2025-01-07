@@ -14,7 +14,8 @@ dependencies = [
     "pydantic",
     "pydantic-core",
     "typing-extensions",
-    "toml"
+    "toml",
+    "pre-commit"
 ]
 requires-python = ">=3.10"
 
